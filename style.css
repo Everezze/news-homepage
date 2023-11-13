@@ -116,6 +116,43 @@ button{
     width: fit-content;
 }
 
+a{
+    border: none;
+    text-decoration: none;
+    color:hsl(236,13%,42%);
+}
+
+
+.vert-align{
+    vertical-align:middle;
+}
+
+.header{
+    padding: 3rem 0;
+    text-align-last: justify;
+}
+
+nav{
+    display: inline-block;
+}
+
+nav a+a{
+    margin-left: 2rem;
+}
+
+.ham-layer{
+    width:50px;
+    height:4px;
+    background: black;
+}
+
+.ham-menu *+*{
+    margin: 6px 0 0;
+}
+
+.ham-menu{
+    display: none;
+}
 
 @media screen and (min-width: 1080px){
     .inline-block{
@@ -158,5 +195,16 @@ button{
 
     .headline-container{
         margin:0;
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    .ham-menu{
+        display: block;
+    }
+
+    .desk-menu{
+            display: none;
     }
 }
