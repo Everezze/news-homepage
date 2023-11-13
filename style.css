@@ -25,7 +25,7 @@ h1,h2,h3,h4,p{
     padding-top: 2rem;
 }
 
-.article-container>div{
+.article-container>*{
     display: flow-root;
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -83,24 +83,25 @@ p{
     padding-bottom: 2rem;
 }
 
+.headline-container {
+    margin-bottom: 3rem;
+}
+
 .headline-container img{
     width:100%;
 }
 
 .headline-container h2{
-    font-size: 3rem;
+    font-size: 3.5rem;
+    font-weight: 800;
 }
 
 .headline-container div *{
     margin-top: 1rem;
 }
 
-.headline-container h2{
-    display: inline-block;
-}
-
 .headline-container p{
-    display: inline-block;
+    vertical-align: top;
 }
 
 button{
@@ -111,18 +112,23 @@ button{
     text-transform: uppercase;
     letter-spacing: 4px;
     font-weight: 800;
+    display: block;
+    width: fit-content;
 }
 
-@media screen and (min-width: 1043px){
+
+@media screen and (min-width: 1080px){
+    .inline-block{
+        display: inline-block;
+    }
+
     .news-container{
         width: 34%;
-        display: inline-block;
         vertical-align: top;
     }
 
     .headline-container{
         width:63%;
-        display: inline-block;
     }
 
     main{
@@ -134,7 +140,23 @@ button{
     }
 
     .article-container>div{
-        display: inline-block;
         width:32%;
+    }
+
+
+    .headline-container h2{
+        width:44%;
+    }
+
+    .headline-container p{
+        width:55%;
+    }
+
+    .headline-container button{
+        margin-top: 4.5rem;
+    }
+
+    .headline-container{
+        margin:0;
     }
 }
