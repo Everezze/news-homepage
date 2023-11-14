@@ -136,10 +136,6 @@ nav{
     display: inline-block;
 }
 
-nav a+a{
-    margin-left: 2rem;
-}
-
 .ham-layer{
     width:50px;
     height:4px;
@@ -152,6 +148,14 @@ nav a+a{
 
 .ham-menu{
     display: none;
+}
+
+.desk-menu > *{
+    display: inline-block;
+}
+
+.desk-menu > *+*{
+    margin-left: 2rem;
 }
 
 @media screen and (min-width: 1080px){
@@ -206,5 +210,41 @@ nav a+a{
 
     .desk-menu{
             display: none;
+            position:fixed;
+            left: 30%;
+            right:0;
+            top:0;
+            bottom: 0;
+            background: hsl(36,100%,99%);
+            color: black;
+    }
+
+    .desk-menu > div{
+        margin:0;
+        display: block;
+        padding: 1rem 1.5rem;
+    }
+
+    .desk-menu::before{
+        content: "X";
+        padding: 1rem 1.5rem;
+        display: block;
+        font-size: 3rem;
+        text-align-last: end;
+        margin-bottom: 2rem;
+    }
+
+    .desk-menu::after{
+        content: "";
+        position:fixed;
+        top:0;
+        left:0;
+        right: 70%;
+        bottom:0;
+        background: hsla(240,100%,5%,40%);
+    }
+
+    .desk-menu a{
+        color:hsl(240,100%,5%);
     }
 }
