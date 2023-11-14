@@ -203,6 +203,17 @@ nav{
 
 }
 
+nav .display_el{
+    display: block;
+}
+
+.cross-button{
+    display: none;
+    font-size: 3rem;
+    text-align-last: end;
+    margin-bottom: 2rem;
+}
+
 @media screen and (max-width: 570px){
     .ham-menu{
         display: block;
@@ -216,22 +227,13 @@ nav{
             top:0;
             bottom: 0;
             background: hsl(36,100%,99%);
-            color: black;
+            color:hsl(240,100%,5%);
     }
 
     .desk-menu > div{
         margin:0;
         display: block;
         padding: 1rem 1.5rem;
-    }
-
-    .desk-menu::before{
-        content: "X";
-        padding: 1rem 1.5rem;
-        display: block;
-        font-size: 3rem;
-        text-align-last: end;
-        margin-bottom: 2rem;
     }
 
     .desk-menu::after{
@@ -246,5 +248,9 @@ nav{
 
     .desk-menu a{
         color:hsl(240,100%,5%);
+    }
+
+    nav{
+        cursor: pointer;
     }
 }
