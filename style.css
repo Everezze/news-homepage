@@ -70,6 +70,10 @@ p{
     color: hsl(36, 100%, 99%);
 }
 
+.news-container h3:hover{
+    color:hsl(35, 77%, 62%);
+}
+
 .news-container p{
     color:hsl(233, 8%, 79%);
 }
@@ -116,10 +120,18 @@ button{
     width: fit-content;
 }
 
+button:hover{
+    background: hsl(240,100%,5%);
+}
+
 a{
     border: none;
     text-decoration: none;
     color:hsl(236,13%,42%);
+}
+
+a:hover,.article-container h3:hover{
+    color: hsl(5,85%,63%);
 }
 
 
